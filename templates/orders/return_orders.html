@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> Retutn Orders Page </title>
+    </head>
+    <body>
+        <h3> Return Orders : </h3>
+        <form method="post">
+            {% csrf_token %}
+            Product Id : <input type="text" name="prod_id"> <br>
+            Product Type : <input type="text" name="prod_type"> <br>
+            Email : <input type="email" name="email"> <br>
+            Phone No : <input type="text" name="phn_no"> <br>
+            Description : <textarea rows="5" cols="40" name="description" placeholder="Enter Details here..."></textarea> <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
