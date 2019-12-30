@@ -10,11 +10,6 @@ def returnOrders(request):
         email = request.POST['email']
         phone_no = request.POST['phn_no']
         description = request.POST['description']
-        print('product id is :',product_id)
-        print('product_type is :',product_type)
-        print('email id is :',email)
-        print('phone_no is :',phone_no)
-        print('description is :',description)
         data = ReturnOrder(product_id=product_id, product_type=product_type, user_email=email, phone_no=phone_no, description=description)
         data.save()
         return HttpResponse('Success')
